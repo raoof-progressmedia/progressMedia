@@ -28,18 +28,33 @@ export default function Navbar() {
   return (
     <header className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
       <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-        {/* Animated Logo */}
-        <div className="flex items-center gap-2">
-          <motion.div
-            initial={{ rotate: 0 }}
-            animate={{ rotate: 360 }}
-            transition={{ duration: 1 }}
-            className="rounded-full border-2 border-primary p-1"
-          >
-            <Image src="/assets/logo.png" alt="Logo" width={40} height={40} className="rounded-full" />
-          </motion.div>
-          <span className="text-xl font-bold text-primary font-serif">Progress Media</span>
-        </div>
+        {/* Animated Logo with Infinite Subtle Rotation */}
+<div className="flex items-center gap-3">
+  <motion.div
+    initial={{ rotate: 0 }}
+    animate={{ rotate: 360 }}
+    transition={{
+      repeat: Infinity,
+      repeatType: "loop",
+      duration: 10,
+      ease: "linear",
+    }}
+    className="rounded-full border-2 border-primary p-1 w-10 h-10 flex items-center justify-center shadow-md"
+  >
+    <Image
+      src="/assets/logo.png"
+      alt="Progress Media Logo"
+      width={36}
+      height={36}
+      className="rounded-full object-cover"
+    />
+  </motion.div>
+
+  <span className="text-2xl font-extrabold text-primary font-sans tracking-wide">
+    Progress Media
+  </span>
+</div>
+
 
         {/* Desktop Menu */}
         <nav className="hidden md:flex gap-8 font-sans">
@@ -47,7 +62,7 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-dark hover:text-primary transition font-medium relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300"
+              className="text-dark hover:text-primary transition font-bold relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300"
             >
               {item.label}
             </Link>
@@ -80,7 +95,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-dark hover:text-primary transition font-medium"
+                className="block py-2 text-dark hover:text-primary transition font-bold"
               >
                 {item.label}
               </Link>

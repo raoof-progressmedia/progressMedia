@@ -11,8 +11,8 @@ module.exports = {
         light: "#F9FAFB"
       },
       fontFamily: {
-      sans: ['Inter', 'sans-serif'],
-      serif: ['Playfair Display', 'serif'],
+      sans: ['Lato', 'sans-serif'],
+      serif: ['Kalam', 'cursive'],
     },
 
     }
