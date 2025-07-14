@@ -50,7 +50,7 @@ export default function Navbar() {
     />
   </motion.div>
 
-  <span className="text-2xl font-extrabold text-primary font-sans tracking-wide">
+  <span className="text-2xl  text-primary font-sans tracking-wide">
     Progress Media
   </span>
 </div>
