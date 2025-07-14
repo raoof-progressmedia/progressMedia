@@ -1,11 +1,46 @@
+import Image from "next/image";
+
 export default function Hero() {
   return (
-    <section className="text-center py-32 px-4 bg-light text-dark">
-      <h1 className="text-4xl md:text-6xl font-bold mb-4">Stop Failing. Start Progressing.</h1>
-      <p className="text-lg md:text-xl max-w-xl mx-auto mb-6">Progress Media helps individuals and businesses go from idea to impact using digital tools and mindset alignment.</p>
-      <a href="https://wa.me/" target="_blank" rel="noopener noreferrer" className="inline-block bg-primary text-white px-6 py-3 rounded-full hover:bg-secondary transition">
-        Message Us on WhatsApp
-      </a>
+    <section className="bg-white w-full py-16 px-4">
+      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-center justify-between gap-12">
+        {/* Left Text Content */}
+        <div className="text-center lg:text-left">
+          <h1 className="text-5xl font-latoHeavy text-primary">Progress Media</h1>
+          <p className="text-xl font-kalam italic text-blue-600 mt-2 tracking-widest">
+            SECRETS TO STOP FAILURE
+          </p>
+          <div className="w-60 h-1 bg-accent my-3 mx-auto lg:mx-0" />
+          <p className="text-md font-lato text-blue-600">
+            TECH, FITNESS, MINDSET
+          </p>
+        </div>
+
+        {/* Icons (Right Side) */}
+        <div className="flex gap-4 flex-wrap justify-center">
+          <Image
+            src="/assets/mindset-icon.webp"
+            alt="Mindset Icon"
+            width={100}
+            height={100}
+            className="rounded-xl shadow-lg"
+          />
+          <Image
+            src="/assets/fitness-icon.webp"
+            alt="Fitness Icon"
+            width={100}
+            height={100}
+            className="rounded-xl shadow-lg"
+          />
+          <Image
+            src="/assets/tech-icon.webp"
+            alt="Tech Icon"
+            width={100}
+            height={100}
+            className="rounded-xl shadow-lg"
+          />
+        </div>
+      </div>
     </section>
   );
 }
