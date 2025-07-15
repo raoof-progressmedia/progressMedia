@@ -11,7 +11,7 @@ export default function Hero() {
             SECRETS TO STOP FAILURE
           </p>
           <div className="w-60 h-1 bg-accent my-3 mx-auto lg:mx-0" />
-          <p className="text-md font-sans font-bold text-blue-600">
+          <p className="text-xl font-sans font-medium text-blue-600">
             TECH, FITNESS, MINDSET
           </p>
         </div>

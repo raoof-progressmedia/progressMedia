@@ -62,7 +62,7 @@ export default function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-dark hover:text-primary transition font-bold relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300"
+              className="text-dark hover:text-primary transition font-medium relative after:absolute after:-bottom-1 after:left-0 after:h-[2px] after:w-0 hover:after:w-full after:bg-primary after:transition-all after:duration-300"
             >
               {item.label}
             </Link>
@@ -95,7 +95,7 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="block py-2 text-dark hover:text-primary transition font-bold"
+                className="block py-2 text-dark hover:text-primary transition font-medium"
               >
                 {item.label}
               </Link>

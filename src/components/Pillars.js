@@ -8,22 +8,39 @@ export default function Pillars() {
         <Image
           src="/assets/tech-icon.webp"
           alt="Tech"
-          width={32}
-          height={32}
+          width={80}
+          height={60}
+          className="rounded-xl"
         />
       ),
       title: "Tech Empowerment",
-      description: "We build and digitize businesses for impact.",
+      description: "We empower businesses and individuals to thrive in the digital era",
     },
     {
-      icon: <FaDumbbell size={32} />,
-      title: "Personal Growth",
-      description: "We believe discipline in self leads to freedom in life.",
+      icon: (
+        <Image
+          src="/assets/fitness-icon.webp"
+          alt="Tech"
+          width={80}
+          height={60}
+          className="rounded-xl"
+        />
+      ),
+      title: "Master Your Energy",
+      description: "We know the body is a gateway to unlocking mental clarity and personal leadership.",
     },
     {
-      icon: <FaLightbulb size={32} />,
-      title: "Social Media Strategy",
-      description: "We help your voice reach where it matters most.",
+      icon: (
+        <Image
+          src="/assets/mindset-icon.webp"
+          alt="Tech"
+          width={80}
+          height={60}
+          className="rounded-xl"
+        />
+      ),
+      title: "Rooted Mind, Rising Self",
+      description: "Progress starts with awareness. Mindset is not motivation—it's structure for the soul.",
     },
   ];
 
@@ -37,8 +54,8 @@ export default function Pillars() {
             className="text-center border border-light p-6 rounded-xl shadow-sm hover:shadow-lg transition"
           >
             <div className="mb-4 flex justify-center text-primary">{item.icon}</div>
-            <h3 className="text-xl font-semibold mb-2">{item.title}</h3>
-            <p className="text-sm text-gray-600">{item.description}</p>
+            <h3 className="text-xl font-semibold mb-2 font-sans">{item.title}</h3>
+            <p className="text-sm text-gray-600 font-sans">{item.description}</p>
           </div>
         ))}
       </div>
