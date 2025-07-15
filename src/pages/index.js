@@ -4,6 +4,9 @@ import Hero from "@/components/Hero";
 import Pillars from "@/components/Pillars";
 import CTA from "@/components/CTA";
 import Layout from "@/components/Layout";
+import About from "@/components/About";
+import Contact from "@/components/Contact";
+import FAQ from "@/components/Faq";
 export default function Home() {
   return (
     <>
@@ -16,7 +19,9 @@ export default function Home() {
         <Hero />
         <Pillars />
         <CTA />
-      
+        <About/>
+        <FAQ/>
+      <Contact/>
       </Layout>
     </>
   );

@@ -46,7 +46,7 @@ export default function Pillars() {
 
   return (
     <section id="pillars" className="py-20 px-6 bg-white text-dark my-2">
-      <h2 className="text-3xl font-bold text-center mb-12">Our Pillars</h2>
+      <h2 className="text-3xl font-bold text-center mb-12 text-accent">Our Pillars</h2>
       <div className="grid md:grid-cols-3 gap-10 max-w-6xl mx-auto">
         {items.map((item, idx) => (
           <div
