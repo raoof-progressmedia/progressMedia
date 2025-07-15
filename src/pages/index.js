@@ -7,6 +7,7 @@ import Layout from "@/components/Layout";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
 import FAQ from "@/components/Faq";
+import Services from "@/components/Services";
 export default function Home() {
   return (
     <>
@@ -20,6 +21,7 @@ export default function Home() {
         <Pillars />
         <CTA />
         <About/>
+        <Services/>
         <FAQ/>
       <Contact/>
       </Layout>
