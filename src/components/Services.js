@@ -26,7 +26,7 @@ export default function Services() {
   ];
 
   return (
-    <section id="services" className="relative py-24 px-6 bg-gradient-to-b from-white to-primary text-dark overflow-hidden">
+    <section id="services" className="mt-2 relative py-24 px-6 bg-gradient-to-b from-white to-primary text-dark overflow-hidden">
       {/* Decorative Background */}
       <div className="absolute top-0 left-0 w-full h-full bg-[url('/assets/bg-texture.svg')] bg-cover opacity-5 z-0"></div>
       {/* <div className="absolute -top-10 -left-10 w-[120%] h-32 bg-gradient-to-r from-primary to-accent transform -skew-y-3 z-0"></div> */}

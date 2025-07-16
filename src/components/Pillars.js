@@ -51,7 +51,7 @@ export default function Pillars() {
         {items.map((item, idx) => (
           <div
             key={idx}
-            className="text-center border border-light p-6 rounded-xl shadow-sm hover:shadow-lg transition"
+            className="text-center border border-accent p-6 rounded-xl shadow-sm hover:shadow-lg transition"
           >
             <div className="mb-4 flex justify-center text-primary">{item.icon}</div>
             <h3 className="text-xl font-semibold mb-2 font-sans">{item.title}</h3>
