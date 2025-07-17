@@ -2,27 +2,28 @@ import { useState } from "react";
 
 export default function FAQ() {
   const faqs = [
-    {
-      question: "What is Progress Media?",
-      answer:
-        "Progress Media is a digital-first company helping individuals and businesses grow through technology, personal development, and strategic content.",
-    },
-    {
-      question: "Who can benefit from your services?",
-      answer:
-        "Anyone looking to transition into the digital world—entrepreneurs, small businesses, or creators aiming to build an online presence.",
-    },
-    {
-      question: "Do you offer custom digital solutions?",
-      answer:
-        "Absolutely! We tailor our digital branding, web development, and content strategy solutions to your specific goals.",
-    },
-    {
-      question: "How can I get started?",
-      answer:
-        "Just reach out via email or any of our social platforms. We’ll set up a time to understand your needs and propose a plan.",
-    },
-  ];
+  {
+    question: "What is Progress Media?",
+    answer:
+      "Progress Media is a purpose-driven digital brand helping individuals grow through smart tech solutions, fitness-focused content, mindset coaching, and personalized guidance."
+  },
+  {
+    question: "Who are your services designed for?",
+    answer:
+      "Our services are perfect for fitness coaches, content creators, entrepreneurs, and anyone seeking clarity in mindset and strategy while building a digital presence."
+  },
+  {
+    question: "Do you provide customized solutions?",
+    answer:
+      "Yes — every solution is tailored. Whether it’s a fitness brand website, content strategy, or mindset roadmap, we build around your goals."
+  },
+  {
+    question: "How do I begin working with you?",
+    answer:
+      "Simply reach out via email or any social platform. We’ll schedule a free discovery call to understand your vision and map out a clear action plan."
+  },
+];
+
 
   const [openIndex, setOpenIndex] = useState(null);
 

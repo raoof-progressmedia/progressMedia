@@ -3,14 +3,14 @@ import { RiThreadsFill } from "react-icons/ri";
 
 export default function Footer() {
     const socialLinks = [
-        { icon: <FaFacebookF />, href: "https://facebook.com" },
-        { icon: <FaYoutube />, href: "https://youtube.com" },
-        { icon: <FaInstagram />, href: "https://instagram.com" },
-        { icon: <FaLinkedinIn />, href: "https://linkedin.com" },
-        { icon: <FaTiktok />, href: "https://tiktok.com" },
-        { icon: <RiThreadsFill />, href: "https://threads.net" },
-        { icon: <FaWhatsapp />, href: "https://wa.me/923001234567" }
-    ];
+    { icon: <FaFacebookF />, href: "https://www.facebook.com/profile.php?id=61569673919099" },
+    { icon: <FaYoutube />, href: "https://www.youtube.com/channel/UCUO0O2M0P1SS-KLbMDb1S_Q" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/raufgoher/?hl=en" },
+    { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/in/raoof-goher-b26429358/" },
+    { icon: <FaTiktok />, href: "https://www.tiktok.com/@raoof.progressmedia" },
+    { icon: <RiThreadsFill />, href: "https://www.threads.com/@raufgoher" },
+    { icon: <FaWhatsapp />, href: "https://wa.me/923426167711" },
+  ];
 
     const navLinks = [
         { label: "Home", href: "/" },

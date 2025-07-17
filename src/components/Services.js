@@ -3,27 +3,28 @@ import { FaCogs, FaBolt, FaBrain, FaRocket } from "react-icons/fa";
 
 export default function Services() {
   const services = [
-    {
-      icon: <FaCogs size={28} className="text-accent" />,
-      title: "Custom Web Solutions",
-      description: "Tailored websites and tools to bring your brand to life online with performance and purpose."
-    },
-    {
-      icon: <FaBolt size={28} className="text-accent" />,
-      title: "Performance Branding",
-      description: "From content to campaigns, we shape your brand into an unforgettable digital experience."
-    },
-    {
-      icon: <FaBrain size={28} className="text-accent" />,
-      title: "Mindset-Based Strategy",
-      description: "We guide individuals and teams in structuring their mindset to lead with clarity and confidence."
-    },
-    {
-      icon: <FaRocket size={28} className="text-accent" />,
-      title: "Social Media Launch Kits",
-      description: "Everything you need to ignite your digital presence—from content pillars to audience strategy."
-    },
-  ];
+  {
+    icon: <FaCogs size={28} className="text-accent" />,
+    title: "Smart Tech Solutions",
+    description: "From websites to web app to automation, we create digital tools that elevate your brand and simplify your workflow."
+  },
+  {
+    icon: <FaBolt size={28} className="text-accent" />,
+    title: "Fitness Optimization",
+    description: "Content, programs, and strategies designed to empower fitness coaches, trainers, and enthusiasts online."
+  },
+  {
+    icon: <FaBrain size={28} className="text-accent" />,
+    title: "Mindset Engineering",
+    description: "We help individuals and teams unlock clarity, focus, and confidence through mindset-first strategies."
+  },
+  {
+    icon: <FaRocket size={28} className="text-accent" />,
+    title: "Personalized Guidance",
+    description: "One-on-one coaching and digital mentorship to align your vision with real-world results and growth."
+  },
+];
+
 
   return (
     <section id="services" className="mt-2 relative py-24 px-6 bg-gradient-to-b from-white to-primary text-dark overflow-hidden">

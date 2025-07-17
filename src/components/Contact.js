@@ -3,13 +3,13 @@ import { RiThreadsFill } from "react-icons/ri";
 
 export default function Contact() {
   const socialLinks = [
-    { icon: <FaFacebookF />, href: "https://facebook.com" },
-    { icon: <FaYoutube />, href: "https://youtube.com" },
-    { icon: <FaInstagram />, href: "https://instagram.com" },
-    { icon: <FaLinkedinIn />, href: "https://linkedin.com" },
-    { icon: <FaTiktok />, href: "https://tiktok.com" },
-    { icon: <RiThreadsFill />, href: "https://threads.net" },
-    { icon: <FaWhatsapp />, href: "https://wa.me/923001234567" },
+    { icon: <FaFacebookF />, href: "https://www.facebook.com/profile.php?id=61569673919099" },
+    { icon: <FaYoutube />, href: "https://www.youtube.com/channel/UCUO0O2M0P1SS-KLbMDb1S_Q" },
+    { icon: <FaInstagram />, href: "https://www.instagram.com/raufgoher/?hl=en" },
+    { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/in/raoof-goher-b26429358/" },
+    { icon: <FaTiktok />, href: "https://www.tiktok.com/@raoof.progressmedia" },
+    { icon: <RiThreadsFill />, href: "https://www.threads.com/@raufgoher" },
+    { icon: <FaWhatsapp />, href: "https://wa.me/923426167711" },
   ];
 
   return (
@@ -24,9 +24,9 @@ export default function Contact() {
         </p>
         <a
           href="mailto:hello@progressmedia.com"
-          className="inline-block bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-dark transition mb-8"
+          className="inline-block bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-primary transition mb-8"
         >
-          Email Us: hello@progressmedia.com
+          Email Us: raoof.progressmedia@gmail.com
         </a>
         <div className="flex justify-center gap-6 text-xl text-primary mt-8">
           {socialLinks.map((item, index) => (
