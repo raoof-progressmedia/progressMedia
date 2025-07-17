@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { HiOutlineMenuAlt3, HiOutlineX } from "react-icons/hi";
-import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn, FaTiktok } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn, FaTiktok, FaWhatsapp } from "react-icons/fa";
 import { RiThreadsFill } from "react-icons/ri";
 import Image from "next/image";
 import Link from "next/link";
@@ -23,6 +23,7 @@ export default function Navbar() {
     { icon: <FaLinkedinIn />, href: "https://linkedin.com" },
     { icon: <FaTiktok />, href: "https://tiktok.com" },
     { icon: <RiThreadsFill />, href: "https://threads.net" },
+    { icon: <FaWhatsapp />, href: "https://wa.me/923001234567" }
   ];
 
   return (
@@ -93,6 +94,7 @@ export default function Navbar() {
           >
             {navItems.map((item) => (
               <Link
+              onClick={() => setIsOpen(false)}
                 key={item.href}
                 href={item.href}
                 className="block py-2 text-dark hover:text-primary transition font-medium"
