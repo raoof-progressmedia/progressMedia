@@ -1,4 +1,4 @@
-import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn, FaTiktok, FaWhatsapp } from "react-icons/fa";
+import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn, FaTiktok, FaWhatsapp, FaPinterestP } from "react-icons/fa";
 import { RiThreadsFill } from "react-icons/ri";
 
 export default function Contact() {
@@ -9,6 +9,7 @@ export default function Contact() {
     { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/in/raoof-goher-b26429358/" },
     { icon: <FaTiktok />, href: "https://www.tiktok.com/@raoof.progressmedia" },
     { icon: <RiThreadsFill />, href: "https://www.threads.com/@raufgoher" },
+    { icon: <FaPinterestP />, href: "https://www.pinterest.com/progressmedia123/?actingBusinessId=983192299809048138" },
     { icon: <FaWhatsapp />, href: "https://wa.me/923426167711" },
   ];
 
