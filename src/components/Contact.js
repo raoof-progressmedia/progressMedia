@@ -23,13 +23,17 @@ export default function Contact() {
           Ready to build something meaningful? Whether it's a collaboration, a question,
           or a new beginning—drop us a message and let’s talk progress.
         </p>
-        <a
-          href="mailto:hello@progressmedia.com"
-          className="inline-block bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-primary transition mb-8"
-        >
-          Email Us: raoof.progressmedia@gmail.com
-        </a>
-        <div className="flex justify-center gap-6 text-xl text-primary mt-8">
+<a
+  href="mailto:hello@progressmedia.com"
+  className="inline-block bg-primary text-white px-6 py-3 rounded-full font-semibold hover:bg-accent hover:text-primary transition mb-8 max-w-full break-words text-center"
+>
+  Email Us: raoof.progressmedia
+  <span className="force-break-email inline">@gmail.com</span>
+</a>
+
+
+
+        <div className="flex flex-wrap justify-center gap-6 text-xl text-primary mt-8">
           {socialLinks.map((item, index) => (
             <a
               key={index}

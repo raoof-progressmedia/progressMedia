@@ -2,6 +2,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  @media (max-width: 381px) {
+    .force-break-email {
+      display: block;
+    }
+  }
+}
+
 /* styles/globals.css */
 html {
   scroll-behavior: smooth;

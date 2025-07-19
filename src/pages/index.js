@@ -9,6 +9,7 @@ import Contact from "@/components/Contact";
 import FAQ from "@/components/Faq";
 import Services from "@/components/Services";
 import Footer from "@/components/Footer";
+import Projects from "@/components/Projects";
 export default function Home() {
   return (
     <>
@@ -24,6 +25,7 @@ export default function Home() {
         <About/>
         <Services/>
         <FAQ/>
+        <Projects/>
       <Contact/>
       <Footer/>
       </Layout>
