@@ -25,8 +25,9 @@ export default function Home() {
         <About/>
         <Services/>
         <FAQ/>
-        <Projects/>
+        
       <Contact/>
+      <Projects/>
       <Footer/>
       </Layout>
     </>
