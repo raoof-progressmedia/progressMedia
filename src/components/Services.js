@@ -1,29 +1,30 @@
 import Image from "next/image";
+import React from "react";
 import { FaCogs, FaBolt, FaBrain, FaRocket } from "react-icons/fa";
 
 export default function Services() {
   const services = [
-  {
-    icon: <FaCogs size={28} className="text-accent" />,
-    title: "Smart Tech Solutions",
-    description: "From websites to web app to automation, we create digital tools that elevate your brand and simplify your workflow."
-  },
-  {
-    icon: <FaBolt size={28} className="text-accent" />,
-    title: "Fitness Optimization",
-    description: "Content, programs, and strategies designed to empower fitness coaches, trainers, and enthusiasts online."
-  },
-  {
-    icon: <FaBrain size={28} className="text-accent" />,
-    title: "Mindset Engineering",
-    description: "We help individuals and teams unlock clarity, focus, and confidence through mindset-first strategies."
-  },
-  {
-    icon: <FaRocket size={28} className="text-accent" />,
-    title: "Personalized Guidance",
-    description: "One-on-one coaching and digital mentorship to align your vision with real-world results and growth."
-  },
-];
+    {
+      icon: <FaCogs className="text-accent" />,
+      title: "Smart Tech Solutions",
+      description: "From websites to web app to automation, we create digital tools that elevate your brand and simplify your workflow."
+    },
+    {
+      icon: <FaBolt className="text-accent" />,
+      title: "Fitness Optimization",
+      description: "Content, programs, and strategies designed to empower fitness coaches, trainers, and enthusiasts online."
+    },
+    {
+      icon: <FaBrain className="text-accent" />,
+      title: "Mindset Engineering",
+      description: "We help individuals and teams unlock clarity, focus, and confidence through mindset-first strategies."
+    },
+    {
+      icon: <FaRocket className="text-accent" />,
+      title: "Personalized Guidance",
+      description: "One-on-one coaching and digital mentorship to align your vision with real-world results and growth."
+    },
+  ];
 
 
   return (
@@ -41,14 +42,14 @@ export default function Services() {
           {services.map((service, idx) => (
             <div
               key={idx}
-              className="relative bg-white rounded-2xl shadow-md hover:shadow-xl p-6 transition duration-300 transform hover:-translate-y-1 hover:scale-[1.02] border-t-4 border-accent"
+              className="relative bg-white rounded-2xl shadow-md hover:shadow-xl p-6 transition duration-300 transform hover:-translate-y-1 hover:scale-[1.02] border-t-4 border-accent overflow-hidden"
             >
-              <div className="absolute top-2 right-2 text-accent opacity-10 text-5xl">
-                {service.icon}
+              <div className="absolute -bottom-0 -right-4 text-accent/60 text-7xl z-0 ">
+                {React.cloneElement(service.icon, { className: "" })}
               </div>
               <div className="flex items-center gap-4 mb-4">
-                <div className="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center">
-                  {service.icon}
+                <div className="w-12 h-12 bg-accent bg-opacity-10 rounded-full flex items-center justify-center text-3xl">
+                  {React.cloneElement(service.icon, { className: "text-accent" })}
                 </div>
                 <h3 className="text-xl font-semibold text-dark font-serif">{service.title}</h3>
               </div>
