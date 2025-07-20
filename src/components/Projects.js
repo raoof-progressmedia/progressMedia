@@ -4,24 +4,31 @@ import { motion } from 'framer-motion';
 
 const projects = [
   {
-    title: 'FixIt – Handyman Service Portal',
+    title: 'FixIt – Handyman Services, Repairs & Maintenance Portal',
     description: 'Booking platform for handyman services with user auth and admin tools.',
-    tech: 'Next.js, Python, TailwindCSS',
+    tech: 'React.js, Python, TailwindCSS',
     live: 'https://vise-fix-it.vercel.app/',
     code: '',
   },
   {
     title: 'InPath LMS – Learning Management System',
     description: 'Early-stage LMS to manage courses, user dashboards, and progress tracking.',
-    tech: 'React.js, Python, MongoDB',
+    tech: 'React.js, Python, Tailwind',
     live: 'https://in-path-lms.vercel.app/',
     code: '',
   },
   {
     title: 'Dental Healthcare – Clinic Landing Page',
     description: 'Fully responsive business site with info sections and forms.',
-    tech: 'Next.js, TailwindCSS',
+    tech: 'HTML, Javascript, TailwindCSS',
     live: 'https://dentalhealthcarecenter.vercel.app/',
+    code: '',
+  },
+  {
+    title: 'Mian Shazz – Financial Consultant Service Page',
+    description: 'Fully responsive business site with info sections and forms.',
+    tech: 'HTML, Javascript, TailwindCSS',
+    live: 'https://mian-shazz.vercel.app/',
     code: '',
   },
   {
