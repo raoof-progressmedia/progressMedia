@@ -1,6 +1,6 @@
 import Image from "next/image";
 import React from "react";
-import { FaCogs, FaBolt, FaBrain, FaRocket } from "react-icons/fa";
+import { FaCogs, FaBolt, FaBrain, FaRocket, FaGlobe } from "react-icons/fa";
 
 export default function Services() {
   const services = [
@@ -24,6 +24,12 @@ export default function Services() {
       title: "Personalized Guidance",
       description: "One-on-one coaching and digital mentorship to align your vision with real-world results and growth."
     },
+    {
+  icon: <FaGlobe className="text-accent" />,
+  title: "Complete Digital Presence",
+  description: "A powerful website connected with all your brand's social platforms, complete with custom content to boost your brand."
+}
+
   ];
 
 

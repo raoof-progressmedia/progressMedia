@@ -25,8 +25,9 @@ const projects = [
     code: '',
   },
   {
-    title: 'Mian Shazz – Financial Consultant Service Page',
-    description: 'Fully responsive business site with info sections and forms.',
+    title: 'Mian Shazz – Financial Consulting & Advisory Services',
+description: 'A fully responsive business website with service details, client-focused sections, and interactive contact forms.',
+
     tech: 'HTML, Javascript, TailwindCSS',
     live: 'https://mian-shazz.vercel.app/',
     code: '',
