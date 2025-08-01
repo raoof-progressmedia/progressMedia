@@ -9,6 +9,11 @@ import Link from "next/link";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
+const XTwitterIcon = () => (
+  <svg width="1em" height="1em" viewBox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+    <path d="M787 0H946L583 521L1080 1227H753L478 829L162 1227H0L390 702L0 0H336L591 385L887 0H787Z" />
+  </svg>
+);  
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Elements", href: "#pillars" },
@@ -26,6 +31,7 @@ export default function Navbar() {
     { icon: <RiThreadsFill />, href: "https://www.threads.com/@raufgoher" },
     { icon: <FaPinterestP />, href: "https://www.pinterest.com/progressmedia123/?actingBusinessId=983192299809048138" },
     { icon: <FaWhatsapp />, href: "https://wa.me/923426167711" },
+    { icon: <XTwitterIcon />, href: "https://x.com/progressmedia_r" },
   ];
 
   return (
