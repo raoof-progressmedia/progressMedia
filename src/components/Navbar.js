@@ -5,15 +5,12 @@ import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn, FaTiktok, FaWhatsapp
 import { RiThreadsFill } from "react-icons/ri";
 import Image from "next/image";
 import Link from "next/link";
+import SocialLinks from "./social/social";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
 
-const XTwitterIcon = () => (
-  <svg width="1em" height="1em" viewBox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M787 0H946L583 521L1080 1227H753L478 829L162 1227H0L390 702L0 0H336L591 385L887 0H787Z" />
-  </svg>
-);  
+
   const navItems = [
     { label: "Home", href: "/" },
     { label: "Elements", href: "#pillars" },
@@ -22,17 +19,7 @@ const XTwitterIcon = () => (
     { label: "Contact", href: "#contact" },
   ];
 
-  const socialLinks = [
-    { icon: <FaFacebookF />, href: "https://www.facebook.com/profile.php?id=61569673919099" },
-    { icon: <FaYoutube />, href: "https://www.youtube.com/channel/UCUO0O2M0P1SS-KLbMDb1S_Q" },
-    { icon: <FaInstagram />, href: "https://www.instagram.com/raufgoher/?hl=en" },
-    { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/in/raoof-goher-b26429358/" },
-    { icon: <FaTiktok />, href: "https://www.tiktok.com/@raoof.progressmedia" },
-    { icon: <RiThreadsFill />, href: "https://www.threads.com/@raufgoher" },
-    { icon: <FaPinterestP />, href: "https://www.pinterest.com/progressmedia123/?actingBusinessId=983192299809048138" },
-    { icon: <FaWhatsapp />, href: "https://wa.me/923426167711" },
-    { icon: <XTwitterIcon />, href: "https://x.com/progressmedia_r" },
-  ];
+
 
   return (
     <header className="w-full bg-white shadow-md fixed top-0 left-0 z-50">
@@ -110,14 +97,7 @@ const XTwitterIcon = () => (
                 {item.label}
               </Link>
             ))}
-
-            <div className="flex justify-center gap-5 mt-6 text-xl text-primary">
-              {socialLinks.map((item, i) => (
-                <a key={i} href={item.href} target="_blank" rel="noopener noreferrer" className="hover:text-secondary transition">
-                  {item.icon}
-                </a>
-              ))}
-            </div>
+<SocialLinks/>
           </motion.nav>
         )}
       </AnimatePresence>

@@ -1,23 +1,7 @@
-import { FaFacebookF, FaYoutube, FaInstagram, FaLinkedinIn, FaTiktok,FaWhatsapp, FaPinterestP } from "react-icons/fa";
-import { RiThreadsFill } from "react-icons/ri";
+import SocialLinks from "./social/social";
+
 
 export default function Footer() {
-    const XTwitterIcon = () => (
-  <svg width="1em" height="1em" viewBox="0 0 1200 1227" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-    <path d="M787 0H946L583 521L1080 1227H753L478 829L162 1227H0L390 702L0 0H336L591 385L887 0H787Z" />
-  </svg>
-);  
-    const socialLinks = [
-    { icon: <FaFacebookF />, href: "https://www.facebook.com/profile.php?id=61569673919099" },
-    { icon: <FaYoutube />, href: "https://www.youtube.com/channel/UCUO0O2M0P1SS-KLbMDb1S_Q" },
-    { icon: <FaInstagram />, href: "https://www.instagram.com/raufgoher/?hl=en" },
-    { icon: <FaLinkedinIn />, href: "https://www.linkedin.com/in/raoof-goher-b26429358/" },
-    { icon: <FaTiktok />, href: "https://www.tiktok.com/@raoof.progressmedia" },
-    { icon: <RiThreadsFill />, href: "https://www.threads.com/@raufgoher" },
-    { icon: <FaPinterestP />, href: "https://www.pinterest.com/progressmedia123/?actingBusinessId=983192299809048138" },
-    { icon: <FaWhatsapp />, href: "https://wa.me/923426167711" },
-    { icon: <XTwitterIcon />, href: "https://x.com/progressmedia_r" },
-  ];
 
     const navLinks = [
         { label: "Home", href: "/" },
@@ -70,19 +54,7 @@ export default function Footer() {
                 <div>
 
                     <h5 className="font-semibold mb-3 text-primary">Connect With Us</h5>
-                    <div className="flex flex-wrap gap-4 text-xl text-primary">
-                        {socialLinks.map((social, idx) => (
-                            <a
-                                key={idx}
-                                href={social.href}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="hover:text-accent transition"
-                            >
-                                {social.icon}
-                            </a>
-                        ))}
-                    </div>
+                   <SocialLinks/>
                     
                 </div>
             </div>
