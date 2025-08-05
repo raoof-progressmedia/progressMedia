@@ -27,7 +27,7 @@ const XTwitterIcon = () => (
 );
 
 const socialLinks = [
-  { icon: <SiFiverr className="w-full h-full" />, href: "https://www.fiverr.com/s/pd2Qemp", label: "Fiverr" },
+  { icon: <SiFiverr className="w-full h-full" />, href: "https://www.fiverr.com/raoof_goher?public_mode=true", label: "Fiverr" },
   { icon: <FaFacebookF />, href: "https://www.facebook.com/profile.php?id=61569673919099", label: "Facebook" },
   { icon: <FaYoutube />, href: "https://www.youtube.com/channel/UCUO0O2M0P1SS-KLbMDb1S_Q", label: "YouTube" },
   { icon: <FaInstagram />, href: "https://www.instagram.com/raufgoher/?hl=en", label: "Instagram" },
