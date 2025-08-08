@@ -12,6 +12,7 @@ export default function Document() {
         <link rel="icon" type="image/png" sizes="32x32" href="/h1.png" />
         <link rel="icon" type="image/png" sizes="16x16" href="/h2.png" />
         <meta name="p:domain_verify" content="1c2d55aea357533668557ef6af352c22" />
+<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 
       </Head>
       <body className='antialiased'>
