@@ -1,7 +1,9 @@
-/* globals.css */
+/* src/styles/globals.css */
+
+/* Import Tailwind */
 @import "tailwindcss";
 
-/* Theme Variables */
+/* Define your Progress Media theme */
 @theme {
   --color-primary: #4B0082;
   --color-secondary: #1E90FF;
@@ -9,30 +11,27 @@
   --color-dark: #111827;
   --color-light: #F9FAFB;
 
-  --font-sans: Lato, sans-serif;
-  --font-serif: Kalam, cursive;
+  --font-sans: "Lato", sans-serif;
+  --font-serif: "Kalam", cursive;
 }
 
-/* Base styling */
+/* Global Styles */
 html {
   scroll-behavior: smooth;
-  background: var(--color-light);
 }
 
 body {
   font-family: var(--font-sans);
+  background-color: var(--color-light);
   color: var(--color-dark);
 }
 
-/* Custom utilities */
+/* Utilities */
 @layer utilities {
   @media (max-width: 381px) {
     .force-break-email {
       display: block;
     }
   }
-
-  .btn-brand {
-    @apply bg-primary text-light font-semibold px-6 py-2 rounded-2xl hover:bg-secondary transition;
-  }
 }
+
