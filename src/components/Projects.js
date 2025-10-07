@@ -1,4 +1,5 @@
 // components/ProjectsSection.tsx
+"use client";
 import { FaExternalLinkAlt, FaGithub } from 'react-icons/fa';
 import { motion } from 'framer-motion';
 
