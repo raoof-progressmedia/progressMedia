@@ -1,21 +1,38 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+/* globals.css */
+@import "tailwindcss";
 
+/* Theme Variables */
+@theme {
+  --color-primary: #4B0082;
+  --color-secondary: #1E90FF;
+  --color-accent: #FFD700;
+  --color-dark: #111827;
+  --color-light: #F9FAFB;
+
+  --font-sans: Lato, sans-serif;
+  --font-serif: Kalam, cursive;
+}
+
+/* Base styling */
+html {
+  scroll-behavior: smooth;
+  background: var(--color-light);
+}
+
+body {
+  font-family: var(--font-sans);
+  color: var(--color-dark);
+}
+
+/* Custom utilities */
 @layer utilities {
   @media (max-width: 381px) {
     .force-break-email {
       display: block;
     }
   }
-}
 
-/* styles/globals.css */
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: #F9FAFB;
+  .btn-brand {
+    @apply bg-primary text-light font-semibold px-6 py-2 rounded-2xl hover:bg-secondary transition;
+  }
 }
